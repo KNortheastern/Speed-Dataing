@@ -1,1 +1,16 @@
-p { color: red; }
+
+
+#homeNavTable tr th:nth-child(n+2) {
+	width: 30%;
+}
+
+/* color columns */
+#homeNavTable tr td:nth-child(2) {
+	background-color: #FDF2D0;
+}
+#homeNavTable tr td:nth-child(3) {
+	background-color: #F7E5D6;
+}
+#homeNavTable tr td:nth-child(4) {
+	background-color: #DAE2F1;
+}
