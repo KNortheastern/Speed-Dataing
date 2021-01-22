@@ -1,7 +1,17 @@
 
+/* set font for everything */
+body {
+	font-family: 'Helvetica', sans-serif;
+}
 
+/* make column widths same */
 #homeNavTable tr th:nth-child(n+2) {
-	width: 30%;
+	width: 28%;
+}
+
+/* make button the entire table cell */
+#homeNavTable  a {
+	display: block;
 }
 
 /* color columns */
