@@ -3,6 +3,9 @@
 body {
 	font-family: 'Helvetica', sans-serif;
 }
+p {
+	max-width: 60ch;
+}
 
 /* make column widths same */
 #homeNavTable tr th:nth-child(n+2) {
