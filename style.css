@@ -7,8 +7,45 @@
 body {
 	font-family: 'Helvetica', sans-serif;
 }
+/* follow typographic rule no line more than 60 characters*/
 p {
 	max-width: 60ch;
+}
+
+/* ==========================
+   DESIGN
+   ========================== */
+
+body {
+  background-color: #eee;
+}
+.content-wrapper {
+  	background-color: white;
+  	padding: 2em;
+  	max-width: 960px;
+  	margin-right: auto;
+  	margin-left: auto;
+}
+
+.content > *, .content > * > code {
+	/*background-color: blue;*/
+	max-width: 800px;
+	margin-right: auto;
+  	margin-left: auto;
+}
+.content > p,
+.content > ol,
+.content > pre {
+  max-width: 60ch;
+}
+.content > h1 {
+  max-width: 30ch;
+}
+.content > h2 {
+  max-width: 40ch;
+}
+.content > h3 {
+  max-width: 51ch;
 }
 
 /* ==========================
