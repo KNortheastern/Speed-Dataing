@@ -1,4 +1,8 @@
 
+/* ==========================
+   TYPOGRAPHY
+   ========================== */
+
 /* set font for everything */
 body {
 	font-family: 'Helvetica', sans-serif;
@@ -6,6 +10,10 @@ body {
 p {
 	max-width: 60ch;
 }
+
+/* ==========================
+   HOME PAGE
+   ========================== */
 
 /* make column widths same */
 #homeNavTable tr th:nth-child(n+2) {
@@ -18,12 +26,16 @@ p {
 }
 
 /* color columns */
-#homeNavTable tr td:nth-child(2) {
+#homeNavTable tr:nth-child(n+3) td:nth-child(2) {
 	background-color: #FDF2D0;
 }
-#homeNavTable tr td:nth-child(3) {
+#homeNavTable tr:nth-child(n+3) td:nth-child(3) {
 	background-color: #F7E5D6;
 }
-#homeNavTable tr td:nth-child(4) {
+#homeNavTable tr:nth-child(n+3) td:nth-child(4) {
 	background-color: #DAE2F1;
 }
+
+/* ==========================
+   CODE REFERENCES
+   ========================== */
