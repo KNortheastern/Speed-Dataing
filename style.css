@@ -7,10 +7,6 @@
 body {
 	font-family: 'Helvetica', sans-serif;
 }
-/* follow typographic rule no line more than 60 characters*/
-p {
-	max-width: 60ch;
-}
 
 /* ==========================
    DESIGN
@@ -27,25 +23,11 @@ body {
   	margin-left: auto;
 }
 
-.content > *, .content > * > code {
+.content > * {
 	/*background-color: blue;*/
-	max-width: 800px;
+	max-width: 534px; /* estimated ~60ch width */;
 	margin-right: auto;
   	margin-left: auto;
-}
-.content > p,
-.content > ol,
-.content > pre {
-  max-width: 60ch;
-}
-.content > h1 {
-  max-width: 30ch;
-}
-.content > h2 {
-  max-width: 40ch;
-}
-.content > h3 {
-  max-width: 51ch;
 }
 
 /* ==========================
