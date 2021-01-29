@@ -89,8 +89,17 @@ body {margin:0;}
    ========================== */
 
 /* make column widths same */
-#homeNavTable tr th:nth-child(n+2) {
-	width: 28%;
+#homeNavTable tr th:nth-child(1) {
+	width: 15%;
+}
+#homeNavTable tr th:nth-child(2),
+#homeNavTable tr th:nth-child(3),
+#homeNavTable tr th:nth-child(4),
+#homeNavTable tr th:nth-child(6) {
+	width: 20%;
+}
+#homeNavTable tr th:nth-child(5) {
+	width: 5%
 }
 
 /* make button the entire table cell */
