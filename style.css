@@ -9,7 +9,14 @@ body {
 }
 
 /* ==========================
-   DESIGN
+   COLORS
+   ========================== */
+	:root {
+	  --main: #ED1C24;
+	}
+
+/* ==========================
+   LAYOUT
    ========================== */
 
 .content-wrapper {
@@ -20,9 +27,27 @@ body {
 }
 
 .content-wrapper > * {
-	max-width: 534px; /* estimated ~60ch width */;
+	max-width: 534px; /* estimated ~60ch width */
 	margin-right: auto;
   	margin-left: auto;
+}
+
+
+/* ==========================
+   PREVIOUS & NEXT BUTTONS (temporary, likely replace with bootstrap)
+   ========================== */
+.prevNext {
+	padding-top: 25px;
+}
+.next {
+   	float:right;
+}
+.next, .previous {
+	background-color: var(--main);
+	color: #ffffff;
+  	text-decoration: none;
+  	display: inline-block;
+  	padding: 8px 16px;
 }
 
 /* ==========================
