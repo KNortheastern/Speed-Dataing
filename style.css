@@ -36,9 +36,17 @@ body {
 }
 
 .maxWidthException {
-	max-width: 800px;
+	max-width: 850px;
 }
 
+#homeContent {
+  text-align: center;
+}
+#homeContent p {
+  max-width: 60ch;
+  margin-right: auto;
+  margin-left: auto;
+}
 
 /* ==========================
    PREVIOUS & NEXT BUTTONS (temporary, likely replace with bootstrap)
@@ -91,6 +99,16 @@ body {margin:0;}
 /* ==========================
    HOME PAGE
    ========================== */
+
+/* padding */
+#homeNavTable tr td:nth-child(1) {
+	padding-right: 15px;
+}
+#homeNavTable tr td:nth-child(2),
+#homeNavTable tr td:nth-child(3),
+#homeNavTable tr td:nth-child(4){
+	padding: 15px;
+}
 
 /* make column widths same */
 #homeNavTable tr th:nth-child(1) {

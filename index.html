@@ -4,7 +4,7 @@
 	<head>
 		<!-- link to external files -->
 		<link rel="stylesheet" href="./style.css">
-		<link rel="shortcut icon" type="image/x-icon" href="images/favicon.png">
+		<link rel="shortcut icon" type="image/x-icon" href="images/Brand_Favicon.png">
 
 		<!-- added for temporary navbar -->
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
@@ -17,8 +17,11 @@
 		<div id="navPlaceholder"></div>
 
 		<div class="content-wrapper">
-			<h1 class="maxWidthException">Title</h1>
-			<p class="maxWidthException">Some text here.</p>
+			<div id="homeContent" class="maxWidthException">
+				<div><img src="images/Brand_Logo.png" alt="Speed Data-ing's logo" width="300px"/></div>
+				<p>Welcome to Speed Data-ing, a collection of hands-on tutorials to help you learn data-viz tools fast! No coding experience or installation required.</p>
+				<p>Click on a tool below to get started.</p>
+			</div>
 
 			<table id="homeNavTable" class="maxWidthException">
 				<tr>
@@ -93,15 +96,15 @@
 					<td></td>
 				</tr>
 				<tr>
-					<td></td>
+					<td>Sandbox</td>
 					<td>
-						<p>This is the <a href="https://mybinder.org/v2/gh/KNortheastern/R-Sandbox/HEAD?urlpath=rstudio" target="_blank">R Sandbox.</a></p>
+						<a href="https://mybinder.org/v2/gh/KNortheastern/R-Sandbox/HEAD?urlpath=rstudio" target="_blank">R Sandbox</a>
 					</td>
 					<td>
-						<p>This is the <a href="https://mybinder.org/v2/gh/KNortheastern/Python-Sandbox/HEAD?filepath=Python_Sandbox.ipynb" target="_blank">Python Sandbox.</a> </p>
+						<a href="https://mybinder.org/v2/gh/KNortheastern/Python-Sandbox/HEAD?filepath=Python_Sandbox.ipynb" target="_blank">Python Sandbox</a>
 					</td>
 					<td>
-						<p>This is the <a href="https://mybinder.org/v2/gh/KNortheastern/D3-Sandbox/HEAD?filepath=D3_Sandbox.ipynb" target="_blank">D3.js Sandbox.</a> </p>
+						<a href="https://mybinder.org/v2/gh/KNortheastern/D3-Sandbox/HEAD?filepath=D3_Sandbox.ipynb" target="_blank">D3.js Sandbox</a>
 					</td>
 				</tr>
 			</table>
