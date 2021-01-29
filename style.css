@@ -29,7 +29,7 @@ body {
   	margin-left: auto;
 }
 
-.content-wrapper > * {
+.content-wrapper > *:not(#homeNavTable) {
 	max-width: 534px; /* estimated ~60ch width */
 	margin-right: auto;
   	margin-left: auto;
