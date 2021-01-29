@@ -60,34 +60,26 @@ body {
 body {margin:0;}
 
 .navPlaceholder ul {
-list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color: #333;
-  position: fixed;
-  top: 0;
-  width: 100%;
+	list-style-type: none;
+ 	margin: 0;
+ 	padding: 0;
+ 	overflow: hidden;
+  /*background-color: #333;*/
+ 	position: fixed;
+ 	top: 0;
+ 	width: 100%;
 }
-
-/*.navPlaceholder li {
-  float: right;
-}*/
 
 .navPlaceholder li a {
   display: block;
-  color: white;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
+  color: black;
 }
 
 .navPlaceholder li a:hover:not(.active) {
-  background-color: #111;
-}
-
-.navPlaceholder .active {
-  background-color: #4CAF50;
+	color: var(--main);
 }
 
 
