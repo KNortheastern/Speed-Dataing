@@ -59,7 +59,7 @@ body {
 
 body {margin:0;}
 
-.navPlaceholder ul {
+#navPlaceholder ul {
 	list-style-type: none;
  	margin: 0;
  	padding: 0;
@@ -70,7 +70,7 @@ body {margin:0;}
  	width: 100%;
 }
 
-.navPlaceholder li a {
+#navPlaceholder li a {
   display: block;
   text-align: center;
   padding: 14px 16px;
@@ -78,7 +78,7 @@ body {margin:0;}
   color: black;
 }
 
-.navPlaceholder li a:hover:not(.active) {
+#navPlaceholder li a:hover:not(.active) {
 	color: var(--main);
 }
 
