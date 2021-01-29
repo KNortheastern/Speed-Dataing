@@ -53,6 +53,7 @@ body {
 /* format images */
 #homeNavTable tr:nth-child(2) td {
 	text-align: center;
+	padding-bottom: 25px;
 }
 #homeNavTable img {
 	width: 80px;
