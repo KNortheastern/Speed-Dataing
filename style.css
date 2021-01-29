@@ -27,7 +27,10 @@ p {
    ========================== */
 
 .content-wrapper {
-  	padding: 2em;
+  	padding-left: 2em;
+    padding-right: 2em;
+    padding-bottom: 2em;
+    padding-top: 3em;
   	max-width: 960px;
   	margin-right: auto;
   	margin-left: auto;
@@ -80,7 +83,7 @@ body {margin:0;}
  	margin: 0;
  	padding: 0;
  	overflow: hidden;
-  /*background-color: #333;*/
+  background-color: white;
  	position: fixed;
  	top: 0;
  	width: 100%;
