@@ -18,33 +18,17 @@ There are 3 types of RStudio syntax highlighting:
 	-Script
 */
 
-/* Console Input (all blue, has ">" in front of it) */
-.consoleInput.language-r,
-.consoleInput.language-r .token.comment,
-.consoleInput.language-r .token.string,
-.consoleInput.language-r .token.percent-operator.operator,
-.consoleInput.language-r .token.boolean,
-.consoleInput.language-r .token.ellipsis,
-.consoleInput.language-r .token.number,
-.consoleInput.language-r .token.keyword,
-.consoleInput.language-r .token.operator,
-.consoleInput.language-r .token.punctuation {
-	color: blue;
-}
-
-
-/* Console Output (all black, except for errors which are red) */
-.consoleOutput.language-r,
-.consoleOutput.language-r .token.comment,
-.consoleOutput.language-r .token.string,
-.consoleOutput.language-r .token.percent-operator.operator,
-.consoleOutput.language-r .token.boolean,
-.consoleOutput.language-r .token.ellipsis,
-.consoleOutput.language-r .token.number,
-.consoleOutput.language-r .token.keyword,
-.consoleOutputlanguage-r .token.operator,
-.consoleOutput.language-r .token.punctuation {
+/* Console */
+.language-rconsole {
 	color: black;
+}
+.language-rconsole .input {
+	color: blue;
+
+}
+.language-rconsole .error {
+	color: red;
+	
 }
 
 /* Script */

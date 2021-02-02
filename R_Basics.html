@@ -15,11 +15,12 @@
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.5.0/prism.min.js"></script>
 		<script src="./prism-r.min.js"></script>
 		<link rel="stylesheet" href="./styles-prism-rstudio.css">
+		<script src="./prism-rconsole.js"></script>
 
 		<title>R: Basics</title>
 	</head>
 
-	<body class="language-r">
+	<body>
 		<div id="navPlaceholder"></div>
 
 		<div class="content-wrapper">
@@ -35,11 +36,13 @@
 			<h3>Built-In Functions</h3>
 			<h3>Added Functions</h3>
 
-			<p>You can use the <code>print()</code> function.</p>
-			<pre><code>print("Hello World!")</code></pre>
-			<pre><code>[1] "Hello World!"</code></pre>
+			<p>You can use the <code class="language-r">print()</code> function.</p>
+			<pre><code class="language-r">print("Hello World!")</code></pre>
+			<pre><code class="language-r">[1] "Hello World!"</code></pre>
 
-<pre><code>1 + 1
+
+
+<pre><code class="language-r">1 + 1
 
 # C = (F - 32) / 1.8
 tempF <- 57
@@ -55,9 +58,10 @@ fahr_to_celsius(57)
 fahr_to_celsius(tempF)
 %>%</code></pre>
 
-<pre><code class="consoleInput">> fahr_to_celsius(57)</code></pre>
+<pre><code class="language-rconsole">> fahr_to_celsius(57)</code></pre>
 
-<pre><code class="consoleOutput">> fahr_to_celsius(57)
+
+<pre><code class="language-rconsole">> fahr_to_celsius(57)
 [1] 13.88889
 > fahr_to_celsius(tempF)
 Error in fahr_to_celsius(tempF) : object 'tempF' not found</code></pre>
