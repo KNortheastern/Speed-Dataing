@@ -1,0 +1,82 @@
+/*
+Custom CSS file to modify Prism.js syntax highlighting for r-language to make it look like RStudio.
+
+Every token has the class "token" plus one of:
+	-comment
+	-string
+	-percent-operator.operator
+	-boolean
+	-ellipsis
+	-number
+	-keyword
+	-operator
+	-punctuation
+
+There are 3 types of RStudio syntax highlighting:
+	-Console Input (all blue, has ">" in front of it)
+	-Console Output (all black, except for errors which are red)
+	-Script
+*/
+
+/* Console Input (all blue, has ">" in front of it) */
+.consoleInput.language-r,
+.consoleInput.language-r .token.comment,
+.consoleInput.language-r .token.string,
+.consoleInput.language-r .token.percent-operator.operator,
+.consoleInput.language-r .token.boolean,
+.consoleInput.language-r .token.ellipsis,
+.consoleInput.language-r .token.number,
+.consoleInput.language-r .token.keyword,
+.consoleInput.language-r .token.operator,
+.consoleInput.language-r .token.punctuation {
+	color: blue;
+}
+
+
+/* Console Output (all black, except for errors which are red) */
+.consoleOutput.language-r,
+.consoleOutput.language-r .token.comment,
+.consoleOutput.language-r .token.string,
+.consoleOutput.language-r .token.percent-operator.operator,
+.consoleOutput.language-r .token.boolean,
+.consoleOutput.language-r .token.ellipsis,
+.consoleOutput.language-r .token.number,
+.consoleOutput.language-r .token.keyword,
+.consoleOutputlanguage-r .token.operator,
+.consoleOutput.language-r .token.punctuation {
+	color: black;
+}
+
+/* Script */
+.language-r {
+	color: black;
+}
+.language-r .token.comment {
+	color: #4C886B;
+}
+.language-r .token.string {
+	color: #036A07;
+}
+.language-r .token.percent-operator.operator {
+	color: #687687;
+}
+.language-r .token.boolean {
+	color: #585CF6;
+}
+.language-r .token.ellipsis {
+	color: black;
+}
+.language-r .token.number {
+	color: #0000CD;
+}
+.language-r .token.keyword { /* (functions) */
+	color: #0000FF;
+}
+.language-r .token.operator {
+	color: #687687;
+	background: none; /* needed to over-ride misinterpretation as language-css */
+}
+.language-r .token.punctuation {
+	color: black;
+}
+
