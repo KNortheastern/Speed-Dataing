@@ -135,6 +135,11 @@ body {margin:0;}
 #homeNavTable  a {
 	display: block;
 }
+/* remove link decoration on headers */
+#homeNavTable h2 > a {
+  text-decoration: none;
+  color: black;
+}
 
 /* color columns */
 #homeNavTable tr:nth-child(n+3) td:nth-child(2) {
