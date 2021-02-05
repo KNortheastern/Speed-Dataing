@@ -7,7 +7,4 @@
 		'error': /(Error).*/
 	};
 
-	Prism.languages.rconsole['atrule'].inside.rest = Prism.languages.rconsole;
-
-
 }(Prism));
