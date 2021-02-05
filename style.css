@@ -76,17 +76,20 @@ p {
    NAVBAR (temporary, likely replace with bootstrap)
    ========================== */
 
-body {margin:0;}
+body {
+  margin:0;
+  padding-top: 40px;
+}
 
 #navPlaceholder ul {
 	list-style-type: none;
  	margin: 0;
  	padding: 0;
- 	overflow: hidden;
   background-color: white;
  	position: fixed;
  	top: 0;
  	width: 100%;
+  border-bottom: 1px solid rgba(0,0,0,.15);
 }
 
 #navPlaceholder li a {
@@ -97,10 +100,39 @@ body {margin:0;}
   color: black;
 }
 
-#navPlaceholder li a:hover:not(.active) {
+#navPlaceholder li a:hover:not(.active),
+.dropdown:hover .dropbtn {
 	color: var(--main);
 }
 
+/* format drop-down menu (hidden by default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: white;
+  min-width: 160px;
+  border: 1px solid rgba(0,0,0,.15);
+  z-index: 1;
+}
+/* on hover, show drop-down menu (hidden by default by changing from display none to block) */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* format links inside the drop-down menu */
+#navPlaceholder .dropdown-content a {
+  padding: 12px 16px;
+  display: block;
+  text-align: left;
+}
+/* change link background color when hovered */
+.dropdown-content a:hover {
+  background-color: #f1f1f1;
+}
+
+/* change color of parent link when drop-down menu is shown */
+/* Note: for some reason text-colro does not seem to hold/persist */
+.dropdown:hover .dropbtn {background-color: #f1f1f1;}
 
 
 /* ==========================
