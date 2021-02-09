@@ -43,19 +43,6 @@ p {
   display: block;
 }
 
-.maxWidthException {
-	max-width: 850px;
-}
-
-#homeContent {
-  text-align: center;
-}
-#homeContent p {
-  max-width: 60ch;
-  margin-right: auto;
-  margin-left: auto;
-}
-
 /* ==========================
    PREVIOUS & NEXT BUTTONS (temporary, likely replace with bootstrap)
    ========================== */
@@ -140,58 +127,39 @@ body {
    HOME PAGE
    ========================== */
 
-/* padding */
-#homeNavTable tr td:nth-child(1) {
-	padding-right: 15px;
+#homeContent {
+  max-width: 850px;
+  text-align: center;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 50px;
 }
-#homeNavTable tr td:nth-child(2),
-#homeNavTable tr td:nth-child(3),
-#homeNavTable tr td:nth-child(4){
-	padding: 15px;
-}
-
-/* make column widths same */
-#homeNavTable tr th:nth-child(1) {
-	width: 15%;
-}
-#homeNavTable tr th:nth-child(2),
-#homeNavTable tr th:nth-child(3),
-#homeNavTable tr th:nth-child(4),
-#homeNavTable tr th:nth-child(6) {
-	width: 20%;
-}
-#homeNavTable tr th:nth-child(5) {
-	width: 5%
+#homeContent p {
+  max-width: 60ch;
+  margin-right: auto;
+  margin-left: auto;
 }
 
-/* make button the entire table cell */
-#homeNavTable  a {
-	display: block;
+#navGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  grid-gap: 30px;
+  max-width: 700px;
+  margin-top: 0;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 30px;
 }
-/* remove link decoration on headers */
-#homeNavTable h2 > a {
+#navGrid > div {
+  text-align: center;
+  /*background-color: green;*/
+}
+#navGrid img {
+  width:100%;
+}
+#navGrid a {
   text-decoration: none;
   color: black;
-}
-
-/* color columns */
-#homeNavTable tr:nth-child(n+3) td:nth-child(2) {
-	background-color: var(--rColor);
-}
-#homeNavTable tr:nth-child(n+3) td:nth-child(3) {
-	background-color: var(--pythonColor);
-}
-#homeNavTable tr:nth-child(n+3) td:nth-child(4) {
-	background-color: var(--d3Color);
-}
-
-/* format images */
-#homeNavTable tr:nth-child(2) td {
-	text-align: center;
-	padding-bottom: 25px;
-}
-#homeNavTable img {
-	width: 80px;
 }
 
 /* ==========================
