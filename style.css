@@ -54,10 +54,6 @@ p {
   margin-right: auto;
   margin-left: auto;
 }
-.content-wrapper img {
-  display: inherit;
-}
-
 
 /* ==========================
    PREVIOUS & NEXT BUTTONS (temporary, likely replace with bootstrap)
