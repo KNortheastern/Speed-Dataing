@@ -128,7 +128,7 @@ body {
    ========================== */
 
 #homeContent {
-  max-width: 850px;
+  max-width: 700px;
   text-align: center;
   margin-right: auto;
   margin-left: auto;
@@ -142,7 +142,7 @@ body {
 
 #navGrid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
   grid-gap: 30px;
   max-width: 700px;
   margin-top: 0;
@@ -151,10 +151,11 @@ body {
   margin-bottom: 30px;
 }
 #navGrid img {
+  /*width:80px;*/
   width:100%;
 }
 #navGrid a {
-  /*background-color: green;*/
+  background-color: green;
   text-align: center;
   text-decoration: none;
   color: black;
