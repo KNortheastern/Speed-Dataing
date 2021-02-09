@@ -150,14 +150,12 @@ body {
   margin-left: auto;
   margin-bottom: 30px;
 }
-#navGrid > div {
-  text-align: center;
-  /*background-color: green;*/
-}
 #navGrid img {
   width:100%;
 }
 #navGrid a {
+  /*background-color: green;*/
+  text-align: center;
   text-decoration: none;
   color: black;
 }
